@@ -83,3 +83,82 @@ Received Import Request.
 Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32782b4c1524bdf34b9ef076e3e4c8cb') in 0.004026 seconds
   Import took 0.007835 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002041 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.160 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2077 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 173.3 MB.
+System memory in use after: 173.3 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2519.
+Total: 2.353032 ms (FindLiveObjects: 0.182353 ms CreateObjectMapping: 0.078206 ms MarkObjects: 1.990389 ms  DeleteObjects: 0.101180 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 383.700662 seconds.
+  path: Assets/PlayerMovement.cs
+  artifactKey: Guid(9372432c8bfe74fcb9f1dfe9346a1f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerMovement.cs using Guid(9372432c8bfe74fcb9f1dfe9346a1f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7224752f6b7779d13fe2c93c9362a4c6') in 0.573402 seconds
+  Import took 0.576522 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001645 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.154 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2077 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.8 MB.
+System memory in use after: 177.8 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2523.
+Total: 2.072219 ms (FindLiveObjects: 0.173819 ms CreateObjectMapping: 0.068800 ms MarkObjects: 1.739946 ms  DeleteObjects: 0.088852 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 169.514926 seconds.
+  path: Assets/PlayerMovement.cs
+  artifactKey: Guid(9372432c8bfe74fcb9f1dfe9346a1f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayerMovement.cs using Guid(9372432c8bfe74fcb9f1dfe9346a1f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b47f308aa42f3caed505b6e2af9fed97') in 0.004326 seconds
+  Import took 0.007176 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001994 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.189 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2077 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 178.1 MB.
+System memory in use after: 178.0 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2527.
+Total: 2.490309 ms (FindLiveObjects: 0.206076 ms CreateObjectMapping: 0.080547 ms MarkObjects: 2.095070 ms  DeleteObjects: 0.107403 ms)
+
