@@ -15,12 +15,21 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-
         if(Input.GetButtonDown("Jump"))
         {
             jump = true; 
         }
+
+        if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            runSpeed = 400f;
+        }
+        else
+        {
+            runSpeed = 40f;
+        }
+        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
     }
 
     void FixedUpdate ()
