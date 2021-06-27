@@ -292,7 +292,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374597644}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.6700006, y: 1.53, z: -10}
+  m_LocalPosition: {x: -6.3600006, y: 1.6800001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 977653255}
@@ -411,7 +411,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.6700006, y: 1.53, z: -10}
+  m_LocalPosition: {x: -6.3600006, y: 1.6800001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1140698431
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -817,8 +817,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 63eb26dd307b94d419437950ff29b3f8, type: 3}
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 21300000, guid: b59c8c8b1e567474eb1bcda99ffee924, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -837,8 +837,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766212681}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.67, y: 2.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.36, y: 2.68, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 827538811}
   - {fileID: 1218261439}
@@ -879,18 +879,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.16542244, y: 0.7200744}
+  m_Offset: {x: -0.050153494, y: 0.2244184}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 5}
+    oldSize: {x: 2.56, y: 2.56}
     newSize: {x: 5, y: 5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.5283947, y: 2.976008}
+  m_Size: {x: 1.3295987, y: 1.9846954}
   m_EdgeRadius: 0
 --- !u!114 &1766212687
 MonoBehaviour:
@@ -919,9 +919,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.4}
+  m_Offset: {x: -0.04, y: -0.46}
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.6887746
 --- !u!1 &1843441740
 GameObject:
   m_ObjectHideFlags: 0
