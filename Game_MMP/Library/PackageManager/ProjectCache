@@ -5,7 +5,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 637603807390000000
+=======
+      ticks: 637603854810000000
+>>>>>>> Stashed changes
     m_Hash: 1065953301
   m_LockFileStatus:
     m_FilePath: /Users/martinyankov/Documents/GitHub/MMP21/Game_MMP/Packages/packages-lock.json
@@ -13,7 +17,11 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< Updated upstream
       ticks: 637603807390000000
+=======
+      ticks: 637603854810000000
+>>>>>>> Stashed changes
     m_Hash: 4059965621
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -592,7 +600,11 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.6.5
       source: 1
+<<<<<<< Updated upstream
       resolvedPath: /Users/martinyankov/Documents/GitHub/MMP21/Game_MMP/Library/PackageCache/com.unity.cinemachine@2.6.5
+=======
+      resolvedPath: /Users/lucawoik/Unity/MMP21/Game_MMP/Library/PackageCache/com.unity.cinemachine@2.6.5
+>>>>>>> Stashed changes
       assetPath: Packages/com.unity.cinemachine
       name: com.unity.cinemachine
       displayName: Cinemachine
