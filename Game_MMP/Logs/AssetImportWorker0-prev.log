@@ -12,161 +12,177 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51034
+51343
 Successfully changed project path to: /Users/maximayer/Desktop/Privat/LMU/Semester 6/MMP/Repository/MMP21/Game_MMP
 /Users/maximayer/Desktop/Privat/LMU/Semester 6/MMP/Repository/MMP21/Game_MMP
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 100.98 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 124.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/maximayer/Desktop/Privat/LMU/Semester 6/MMP/Repository/MMP21/Game_MMP/Assets
 GfxDevice: creating device client; threaded=0
-2021-06-27 11:13:45.449 Unity[12442:1302924] Color LCD preferred device: Intel(R) Iris(TM) Graphics 550 (low power)
-2021-06-27 11:13:45.449 Unity[12442:1302924] Metal devices available: 1
-2021-06-27 11:13:45.449 Unity[12442:1302924] 0: Intel(R) Iris(TM) Graphics 550 (low power)
-2021-06-27 11:13:45.450 Unity[12442:1302924] Using device Intel(R) Iris(TM) Graphics 550 (low power)
+2021-06-27 11:22:39.125 Unity[12862:1314514] Color LCD preferred device: Intel(R) Iris(TM) Graphics 550 (low power)
+2021-06-27 11:22:39.125 Unity[12862:1314514] Metal devices available: 1
+2021-06-27 11:22:39.125 Unity[12862:1314514] 0: Intel(R) Iris(TM) Graphics 550 (low power)
+2021-06-27 11:22:39.126 Unity[12862:1314514] Using device Intel(R) Iris(TM) Graphics 550 (low power)
 Initializing Metal device caps: Intel(R) Iris(TM) Graphics 550
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56442
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56862
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.11f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.004035 seconds.
+Registered in 0.001202 seconds.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 91.00 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 99.26 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.920 seconds
+- Completed reload, in  2.416 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006792 seconds.
+Registered in 0.007148 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 224.81 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 73.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.874 seconds
+- Completed reload, in  1.878 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2244 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 179.4 MB.
-System memory in use after: 179.3 MB.
+System memory in use before: 179.7 MB.
+System memory in use after: 179.6 MB.
 
 Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2678.
-Total: 5.127929 ms (FindLiveObjects: 0.435362 ms CreateObjectMapping: 0.150662 ms MarkObjects: 4.255976 ms  DeleteObjects: 0.284033 ms)
+Total: 4.475875 ms (FindLiveObjects: 0.435263 ms CreateObjectMapping: 0.187185 ms MarkObjects: 3.573691 ms  DeleteObjects: 0.278006 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
-  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd78a27303d38c5bc73b55289faa0930d') in 1.577339 seconds
-  Import took 1.583867 seconds .
+  path: Assets/MMP/kebab.png
+  artifactKey: Guid(e6f338fd0a39c44ea94a5f6ad8bbee68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MMP/kebab.png using Guid(e6f338fd0a39c44ea94a5f6ad8bbee68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3220d764337c8343f8be711cc31059c4') in 1.297921 seconds
+  Import took 1.303194 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000644 seconds.
-  path: Assets/TextMesh Pro/Sprites
-  artifactKey: Guid(d0603b6d5186471b96c778c3949c7ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Sprites using Guid(d0603b6d5186471b96c778c3949c7ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c825b4ecabc52a724fdd8944d5209777') in 0.001615 seconds
-  Import took 0.006956 seconds .
+  Time since last request: 0.000306 seconds.
+  path: Assets/MMP/brunnen 1.png
+  artifactKey: Guid(4cf006435040d409692dbf03d4646b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MMP/brunnen 1.png using Guid(4cf006435040d409692dbf03d4646b3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d88c32c83bad664820b85d6e47b97a2') in 0.015477 seconds
+  Import took 0.026527 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd24b63589f4ab3b84256ac775dd88159') in 0.002518 seconds
-  Import took 0.009715 seconds .
+  Time since last request: 18.322732 seconds.
+  path: Assets/MMP/bier.png
+  artifactKey: Guid(b57214d56ddd544e68bc062d87626b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MMP/bier.png using Guid(b57214d56ddd544e68bc062d87626b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b203387bae146e20f2904e56cb15cb8') in 0.026376 seconds
+  Import took 0.032550 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Scenes/level_1.unity
-  artifactKey: Guid(64484b78ac2d0490491e6f458ed6eb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/level_1.unity using Guid(64484b78ac2d0490491e6f458ed6eb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b1bd5720ed4f6d6d4fe544f6b7a588b') in 0.005297 seconds
-  Import took 0.014671 seconds .
+  Time since last request: 0.000315 seconds.
+  path: Assets/MMP/döner.png
+  artifactKey: Guid(5c0e9475fe7ca43d58003cc785e169fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MMP/döner.png using Guid(5c0e9475fe7ca43d58003cc785e169fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20ee622861b6486e124b0f6bf2d27f76') in 0.018721 seconds
+  Import took 0.024022 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.851039 seconds.
-  path: Assets/TextMesh Pro/Resources/TMP Settings.asset
-  artifactKey: Guid(3f5b5dff67a942289a9defa416b206f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/TMP Settings.asset using Guid(3f5b5dff67a942289a9defa416b206f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80217e6c75f9d2e4957cbc8093faaf48') in 2.173819 seconds
-  Import took 2.180578 seconds .
+  Time since last request: 0.000640 seconds.
+  path: Assets/MMP/wurstsemmel.png
+  artifactKey: Guid(4739467f1f69443fab245af2ab3cc469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MMP/wurstsemmel.png using Guid(4739467f1f69443fab245af2ab3cc469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b5eda799b2903f4cd7c77d80a02c00e') in 0.014262 seconds
+  Import took 0.020365 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000740 seconds.
-  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
-  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31d09850e079c4c77073532874e4c7b') in 3.494949 seconds
-  Import took 3.499648 seconds .
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 7.62 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 152.4 MB.
-System memory in use after: 152.5 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2724.
-Total: 4.074668 ms (FindLiveObjects: 0.248149 ms CreateObjectMapping: 0.082221 ms MarkObjects: 3.596878 ms  DeleteObjects: 0.146538 ms)
+  Time since last request: 0.000239 seconds.
+  path: Assets/MMP/döner.png
+  artifactKey: Guid(5c0e9475fe7ca43d58003cc785e169fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MMP/döner.png using Guid(5c0e9475fe7ca43d58003cc785e169fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20ee622861b6486e124b0f6bf2d27f76') in 0.016523 seconds
+  Import took 0.020747 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 289.209898 seconds.
-  path: Assets/MMP/spritesheet_protagonist.png
-  artifactKey: Guid(e851a94a123c44fc7adf11a1a936558b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MMP/spritesheet_protagonist.png using Guid(e851a94a123c44fc7adf11a1a936558b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfd0ce30e075bd331532b08be6ffd25a') in 0.047402 seconds
-  Import took 0.053769 seconds .
+  Time since last request: 0.000262 seconds.
+  path: Assets/MMP/bier.png
+  artifactKey: Guid(b57214d56ddd544e68bc062d87626b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MMP/bier.png using Guid(b57214d56ddd544e68bc062d87626b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b203387bae146e20f2904e56cb15cb8') in 0.013217 seconds
+  Import took 0.018455 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 48.604730 seconds.
-  path: Assets/MMP/spritesheet_protagonist.png
-  artifactKey: Guid(e851a94a123c44fc7adf11a1a936558b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MMP/spritesheet_protagonist.png using Guid(e851a94a123c44fc7adf11a1a936558b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db9ca26a772b556dfce5f369c2388eb3') in 0.013096 seconds
-  Import took 0.018014 seconds .
+  Time since last request: 0.016501 seconds.
+  path: Assets/MMP/wurstsemmel.png
+  artifactKey: Guid(4739467f1f69443fab245af2ab3cc469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MMP/wurstsemmel.png using Guid(4739467f1f69443fab245af2ab3cc469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b5eda799b2903f4cd7c77d80a02c00e') in 0.017931 seconds
+  Import took 0.024555 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.009270 seconds.
-  path: Assets/MMP/spritesheet_protagonist.png
-  artifactKey: Guid(e851a94a123c44fc7adf11a1a936558b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MMP/spritesheet_protagonist.png using Guid(e851a94a123c44fc7adf11a1a936558b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db9ca26a772b556dfce5f369c2388eb3') in 0.023466 seconds
-  Import took 0.030593 seconds .
+  Time since last request: 546.936014 seconds.
+  path: Assets/MMP/professor.png
+  artifactKey: Guid(b9de553708be443b6b1489ea70f9439d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MMP/professor.png using Guid(b9de553708be443b6b1489ea70f9439d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '106be6eab28b00e873c988d089a4acbb') in 0.021469 seconds
+  Import took 0.028270 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005078 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.086 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2224 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 195.0 MB.
-System memory in use after: 195.1 MB.
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/MMP/student 1.png
+  artifactKey: Guid(48d003012f51a430dbf19aa374bd9da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MMP/student 1.png using Guid(48d003012f51a430dbf19aa374bd9da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bedb8829edd1f1a0eb993a8733153ac') in 0.021904 seconds
+  Import took 0.027567 seconds .
 
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2730.
-Total: 2.449936 ms (FindLiveObjects: 0.248748 ms CreateObjectMapping: 0.097390 ms MarkObjects: 1.988468 ms  DeleteObjects: 0.114643 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/MMP/professor.png
+  artifactKey: Guid(b9de553708be443b6b1489ea70f9439d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MMP/professor.png using Guid(b9de553708be443b6b1489ea70f9439d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '106be6eab28b00e873c988d089a4acbb') in 0.013567 seconds
+  Import took 0.018108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000449 seconds.
+  path: Assets/MMP/student 1.png
+  artifactKey: Guid(48d003012f51a430dbf19aa374bd9da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MMP/student 1.png using Guid(48d003012f51a430dbf19aa374bd9da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bedb8829edd1f1a0eb993a8733153ac') in 0.014111 seconds
+  Import took 0.018627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.737354 seconds.
+  path: Assets/MMP/Characters (512x512)
+  artifactKey: Guid(1b6a08747740648f981a8fc5031eb355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MMP/Characters (512x512) using Guid(1b6a08747740648f981a8fc5031eb355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '516d25f4d35302986af136813c40b38d') in 0.002332 seconds
+  Import took 0.016487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074206 seconds.
+  path: Assets/MMP/Characters (512x512)/professor.png
+  artifactKey: Guid(dff8ea9af6892479fa335e3a7d48516d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MMP/Characters (512x512)/professor.png using Guid(dff8ea9af6892479fa335e3a7d48516d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7270a0ab05d79da2d49c55fbe7e0e8f') in 0.019282 seconds
+  Import took 0.026021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/MMP/Characters (512x512)/student.png
+  artifactKey: Guid(f511b335ce9ea44b2986129a0cbd360d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MMP/Characters (512x512)/student.png using Guid(f511b335ce9ea44b2986129a0cbd360d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b261ea803ba4559c2d960c595fa70f51') in 0.020768 seconds
+  Import took 0.029051 seconds .
 

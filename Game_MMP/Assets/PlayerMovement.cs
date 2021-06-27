@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller; 
 
-    public float runSpeed = 40f;
+    public float runSpeed = 20f;
 
     float horizontalMove = 0f;
 
@@ -20,13 +20,13 @@ public class PlayerMovement : MonoBehaviour
             jump = true; 
         }
 
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+        if(Input.GetKey(KeyCode.LeftShift))
         {
-            runSpeed = 400f;
+            runSpeed = 50f;
         }
         else
         {
-            runSpeed = 40f;
+            runSpeed = 20f;
         }
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
