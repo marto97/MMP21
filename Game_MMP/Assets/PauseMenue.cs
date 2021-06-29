@@ -55,4 +55,9 @@ public class PauseMenue : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
+
+    public void PlayAgain ()
+    {
+        SceneManager.LoadScene("levelHUD");
+    }
 }
