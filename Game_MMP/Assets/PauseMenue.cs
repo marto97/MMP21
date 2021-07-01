@@ -79,7 +79,7 @@ public class PauseMenue : MonoBehaviour
     public void PlayAgain ()
     {   
         Resume();
-        SceneManager.LoadScene("levelHUDw");
+        SceneManager.LoadScene("levelHUD");
     }
 
     public void MainMenue ()
