@@ -8,12 +8,12 @@ public class MainMenue : MonoBehaviour
   
     public void PlayGame ()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(2);
     }
 
     public void PlayLevel1 ()
     {
-        SceneManager.LoadScene("level_1");
+        SceneManager.LoadScene(2);
     }
 
     public void QuitGame ()
