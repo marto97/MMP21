@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class PauseMenue : MonoBehaviour
 {
@@ -10,16 +12,15 @@ public class PauseMenue : MonoBehaviour
     public GameObject PauseMenueUI;
     public GameObject PauseOverlay;
 
-     public void MainMenue ()
-    {
-        Resume();
-        SceneManager.LoadScene("MainMenue");
-    }
 
-    public void QuitGame ()
-    {
-        Debug.Log("QUIT!");
-        Application.Quit();
+    public int countdownTime;
+    public TextMeshProUGUI countdownDisplay;
+
+    public GameObject TimeUpScreen;
+
+    // called before the first frame
+    public void Start(){
+        StartCoroutine(CountdownToStart());
     }
 
     // called once per frame
@@ -40,6 +41,7 @@ public class PauseMenue : MonoBehaviour
         
     }
 
+
     public void Resume ()
     {
         PauseMenueUI.SetActive(false);
@@ -56,8 +58,39 @@ public class PauseMenue : MonoBehaviour
         GameIsPaused = true;
     }
 
-    public void PlayAgain ()
+
+    IEnumerator CountdownToStart()
     {
-        SceneManager.LoadScene("levelHUD");
+        while (countdownTime > 0)
+        {
+            countdownDisplay.text = countdownTime.ToString();
+
+            yield return new WaitForSeconds(1f);
+
+            countdownTime--;
+        }
+
+        countdownDisplay.text = "Time is UP!!!";
+        TimeUpScreen.SetActive(true);
+        PauseOverlay.SetActive(false);
+        Time.timeScale = 0f;
+    }
+
+    public void PlayAgain ()
+    {   
+        Resume();
+        SceneManager.LoadScene("levelHUDw");
+    }
+
+    public void MainMenue ()
+    {
+        Resume();
+        SceneManager.LoadScene("MainMenue");
+    }
+
+    public void QuitGame ()
+    {
+        Debug.Log("QUIT!");
+        Application.Quit();
     }
 }
