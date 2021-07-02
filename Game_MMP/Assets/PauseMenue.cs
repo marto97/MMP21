@@ -79,7 +79,8 @@ public class PauseMenue : MonoBehaviour
     public void PlayAgain ()
     {   
         Resume();
-        SceneManager.LoadScene("levelHUD");
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 
     public void MainMenue ()
