@@ -12,9 +12,13 @@ public class PlayerMovement : MonoBehaviour
 
     bool jump = false;
 
+    public Animator animator;
+
     // Update is called once per frame
     void Update()
     {
+        animator.SetFloat("Horizontal", Mathf.Abs(Input.GetAxis("Horizontal")));
+
         if(Input.GetButtonDown("Jump"))
         {
             jump = true; 
