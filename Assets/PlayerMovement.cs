@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public CharacterController2D controller; 
+    public CharacterController2D controller;
 
     public float runSpeed = 20f;
 
@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetButtonDown("Jump"))
         {
-            jump = true; 
+            jump = true;
         }
 
         if(Input.GetKey(KeyCode.LeftShift))

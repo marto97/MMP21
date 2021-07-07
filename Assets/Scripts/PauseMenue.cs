@@ -12,7 +12,6 @@ public class PauseMenue : MonoBehaviour
     public GameObject PauseMenueUI;
     public GameObject PauseOverlay;
 
-
     public int countdownTime;
     public TextMeshProUGUI countdownDisplay;
 
@@ -37,8 +36,8 @@ public class PauseMenue : MonoBehaviour
                 Pause();
             }
         }
-        
-        
+
+
     }
 
 
@@ -48,6 +47,10 @@ public class PauseMenue : MonoBehaviour
         PauseOverlay.SetActive(true);
         Time.timeScale = 1f;
         GameIsPaused = false;
+
+        AudioSource audio = GameObject.FindGameObjectWithTag("BackgroundAudio").GetComponent<AudioSource>();
+        audio.Play();
+
     }
 
     public void Pause ()
@@ -56,6 +59,9 @@ public class PauseMenue : MonoBehaviour
         PauseOverlay.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
+
+        AudioSource audio = GameObject.FindGameObjectWithTag("BackgroundAudio").GetComponent<AudioSource>();
+        audio.Pause();
     }
 
 
@@ -73,11 +79,13 @@ public class PauseMenue : MonoBehaviour
         countdownDisplay.text = "Time is UP!!!";
         TimeUpScreen.SetActive(true);
         PauseOverlay.SetActive(false);
+        AudioSource audio = GameObject.FindGameObjectWithTag("BackgroundAudio").GetComponent<AudioSource>();
+        audio.Pause();
         Time.timeScale = 0f;
     }
 
     public void PlayAgain ()
-    {   
+    {
         Resume();
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
