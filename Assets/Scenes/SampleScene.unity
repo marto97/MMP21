@@ -1264,6 +1264,7 @@ GameObject:
   - component: {fileID: 1344245531}
   - component: {fileID: 1344245530}
   - component: {fileID: 1344245529}
+  - component: {fileID: 1344245532}
   m_Layer: 0
   m_Name: doener
   m_TagString: Collectable
@@ -1346,12 +1347,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1344245528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.931096, y: 1.8033466, z: 0}
+  m_LocalPosition: {x: 14.74, y: 1.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1344245532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344245528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3042622001a7e4dd7a038ab389632277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: 0.5
 --- !u!1 &1585982526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,6 +1377,7 @@ GameObject:
   - component: {fileID: 1585982529}
   - component: {fileID: 1585982528}
   - component: {fileID: 1585982527}
+  - component: {fileID: 1585982530}
   m_Layer: 0
   m_Name: wurstsemmel
   m_TagString: Collectable
@@ -1445,12 +1460,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585982526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.85, y: 3.83, z: 0}
+  m_LocalPosition: {x: 12.43, y: 1.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1585982530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585982526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3042622001a7e4dd7a038ab389632277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: 0
 --- !u!1 &1766212681
 GameObject:
   m_ObjectHideFlags: 0
@@ -2259,6 +2287,7 @@ GameObject:
   - component: {fileID: 2065178416}
   - component: {fileID: 2065178415}
   - component: {fileID: 2065178417}
+  - component: {fileID: 2065178418}
   m_Layer: 0
   m_Name: beer
   m_TagString: Collectable
@@ -2325,7 +2354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2065178414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.97, y: 5.83, z: 0}
+  m_LocalPosition: {x: 16.81, y: 1.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2347,3 +2376,16 @@ CircleCollider2D:
   m_Offset: {x: -0.06, y: -0.03}
   serializedVersion: 2
   m_Radius: 0.89
+--- !u!114 &2065178418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065178414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3042622001a7e4dd7a038ab389632277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: 1
