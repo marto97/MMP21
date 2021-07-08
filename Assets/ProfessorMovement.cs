@@ -6,7 +6,7 @@ public class ProfessorMovement : MonoBehaviour
 {
 
     public float speed;
-
+    private bool facingRight = true;
     private Transform target;
 
     // Start is called before the first frame update
@@ -19,5 +19,15 @@ public class ProfessorMovement : MonoBehaviour
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        if (transform.position.x > target.position.x && facingRight)
+        {
+            facingRight = false;
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
+        if (transform.position.x < target.position.x && !facingRight)
+        {
+            facingRight = true;
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
+        }
     }
 }
