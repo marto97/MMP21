@@ -32,6 +32,11 @@ public class CharacterController2D : MonoBehaviour
 
 	AudioSource jumpSound;
 
+	public PauseMenue pauseMenue;
+	public int bonusForItems;
+	public int damageFromSpike;
+	public int damageFromProfessor;
+
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -150,8 +155,12 @@ public class CharacterController2D : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+		//Access script "PauseMenue" to call timer-funcions
+		pauseMenue = GameObject.Find("CanvasHUD").GetComponent<PauseMenue>();
+
 		if (other.gameObject.CompareTag("Collectable"))
         {
+			pauseMenue.AddToCountdown(bonusForItems);
 			Destroy(other.gameObject);
 		}
 
@@ -163,8 +172,12 @@ public class CharacterController2D : MonoBehaviour
 
 		if (other.gameObject.CompareTag("Spikes"))
 		{
-			//Call function to reduce remaining time here
-			Debug.Log("Ouch, that hurts!");
+			pauseMenue.SubFromCountdown(damageFromSpike);
+		}
+
+		if (other.gameObject.CompareTag("Professor"))
+		{
+			pauseMenue.SubFromCountdown(damageFromProfessor);
 		}
 	}
 }
