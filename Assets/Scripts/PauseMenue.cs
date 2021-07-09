@@ -84,6 +84,16 @@ public class PauseMenue : MonoBehaviour
         Time.timeScale = 0f;
     }
 
+    public void AddToCountdown (int plus)
+    {
+        countdownTime += plus;
+    }
+
+    public void SubFromCountdown (int minus)
+    {
+        countdownTime -= minus;
+    }
+
     public void PlayAgain ()
     {
         Resume();
