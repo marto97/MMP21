@@ -6,6 +6,8 @@ TagManager:
   tags:
   - BackgroundAudio
   - Collectable
+  - Spikes
+  - FinishLevel
   layers:
   - Default
   - TransparentFX
