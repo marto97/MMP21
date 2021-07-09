@@ -154,5 +154,17 @@ public class CharacterController2D : MonoBehaviour
         {
 			Destroy(other.gameObject);
 		}
-    }
+
+		if (other.gameObject.CompareTag("FinishLevel"))
+		{
+			//Call function to display "YOU WIN!" screen here / jump to next level
+			Debug.Log("YOU WON!");
+		}
+
+		if (other.gameObject.CompareTag("Spikes"))
+		{
+			//Call function to reduce remaining time here
+			Debug.Log("Ouch, that hurts!");
+		}
+	}
 }

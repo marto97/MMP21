@@ -6,8 +6,10 @@ public class ProfessorMovement : MonoBehaviour
 {
 
     public float speed;
-    private bool facingRight = true;
     private Transform target;
+    private bool facingRight = true;
+    private bool isAlive = true;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +19,12 @@ public class ProfessorMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        if (isAlive)
+            moveTowardsPlayer();
+    }
+
+    void moveTowardsPlayer()
     {
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         if (transform.position.x > target.position.x && facingRight)
@@ -28,6 +36,18 @@ public class ProfessorMovement : MonoBehaviour
         {
             facingRight = true;
             transform.localRotation = Quaternion.Euler(0, 0, 0);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Spikes"))
+        {
+            isAlive = false;
+            animator.SetBool("isAlive", false);
+            this.transform.localRotation = Quaternion.Euler(0, 0, -90);
+            //yield return new WaitForSeconds(2);
+            //Destroy(this.gameObject);
         }
     }
 }
