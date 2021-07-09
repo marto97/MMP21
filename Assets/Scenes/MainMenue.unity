@@ -500,11 +500,11 @@ MonoBehaviour:
   m_text: 'CREDITS:
 
 
-    A game by Maxi, Martin & Luca
+    A game by Maxi, Martin, Fillipe & Luca
 
 
-    Made for the MMP21
-    Course'
+    Made for the
+    MMP21 Course'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dbb69e2d537e2431bbf81890f70419a7, type: 2}
   m_sharedMaterial: {fileID: -8668361133751158100, guid: dbb69e2d537e2431bbf81890f70419a7, type: 2}
@@ -894,8 +894,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -556, y: 171.7185}
-  m_SizeDelta: {x: 564.2871, y: 564.2931}
+  m_AnchoredPosition: {x: -544, y: -0.000015259}
+  m_SizeDelta: {x: 656.283, y: 667.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &443267045
 MonoBehaviour:
