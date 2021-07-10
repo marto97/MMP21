@@ -161,6 +161,8 @@ public class CharacterController2D : MonoBehaviour
 		if (other.gameObject.CompareTag("Collectable"))
         {
 			pauseMenue.AddToCountdown(bonusForItems);
+			AudioSource audio = GameObject.FindGameObjectWithTag("CollectSound").GetComponent<AudioSource>();
+			audio.Play();
 			Destroy(other.gameObject);
 		}
 
@@ -168,16 +170,23 @@ public class CharacterController2D : MonoBehaviour
 		{
 			//Call function to display "YOU WIN!" screen here / jump to next level
 			Debug.Log("YOU WON!");
+			AudioSource audio = other.gameObject.GetComponent<AudioSource>();
+			audio.Play();
 		}
 
 		if (other.gameObject.CompareTag("Spikes"))
 		{
 			pauseMenue.SubFromCountdown(damageFromSpike);
+			AudioSource audio = other.gameObject.GetComponent<AudioSource>();
+			audio.Play();
+
 		}
 
 		if (other.gameObject.CompareTag("Professor"))
 		{
 			pauseMenue.SubFromCountdown(damageFromProfessor);
+			AudioSource audio = other.gameObject.GetComponent<AudioSource>();
+			audio.Play();
 		}
 	}
 }

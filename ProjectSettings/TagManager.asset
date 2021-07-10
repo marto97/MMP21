@@ -9,6 +9,7 @@ TagManager:
   - Spikes
   - FinishLevel
   - Professor
+  - CollectSound
   layers:
   - Default
   - TransparentFX
