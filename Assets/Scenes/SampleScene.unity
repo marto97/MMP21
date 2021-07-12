@@ -8979,8 +8979,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   pauseMenue: {fileID: 131250167}
-  bonusForItems: 10
-  damageFromSpike: 15
+  bonusForItems: 5
+  damageFromSpike: 5
   damageFromProfessor: 5
 --- !u!212 &1766212683
 SpriteRenderer:
