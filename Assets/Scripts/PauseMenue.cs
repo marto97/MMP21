@@ -109,14 +109,15 @@ public class PauseMenue : MonoBehaviour
     public void NextLevel ()
     {
         Scene scene = SceneManager.GetActiveScene();
-        if (scene.buildIndex < 3)
+        if (scene.buildIndex < SceneManager.sceneCountInBuildSettings)
         {
-            SceneManager.LoadScene(scene.buildIndex);
+            SceneManager.LoadScene(scene.buildIndex + 1);
         }
         else
         {
             SceneManager.LoadScene(0);
         }
+        Time.timeScale = 1f;
     }
 
     public void PlayAgain ()
