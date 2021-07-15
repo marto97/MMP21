@@ -10,6 +10,7 @@ TagManager:
   - FinishLevel
   - Professor
   - CollectSound
+  - gameover
   layers:
   - Default
   - TransparentFX

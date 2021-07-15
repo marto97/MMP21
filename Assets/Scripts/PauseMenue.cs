@@ -23,7 +23,7 @@ public class PauseMenue : MonoBehaviour
     public TextMeshProUGUI countdownPlus;
 
 
-    private AudioSource Audio; 
+    private AudioSource Audio;
 
     // called before the first frame
     public void Start(){
@@ -92,7 +92,9 @@ public class PauseMenue : MonoBehaviour
             countdownTime--;
         }
 
+
         countdownDisplay.text = "Time is UP!!!";
+
         TimeUpScreen.SetActive(true);
         PauseOverlay.SetActive(false);
         Time.timeScale = 0f;
