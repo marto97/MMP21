@@ -11,14 +11,18 @@ public class PauseMenue : MonoBehaviour
 
 
     public GameObject PauseOverlay;
+    public GameObject Damage;
+    public GameObject Healing;
     public GameObject TimeUpScreen;
     public GameObject PauseMenueScreen;
     public GameObject FinishScreen;
 
     public int countdownTime;
     public TextMeshProUGUI countdownDisplay;
+    public TextMeshProUGUI countdownMinus;
+    public TextMeshProUGUI countdownPlus;
 
- 
+
     private AudioSource Audio; 
 
     // called before the first frame
@@ -99,11 +103,32 @@ public class PauseMenue : MonoBehaviour
     public void AddToCountdown (int plus)
     {
         countdownTime += plus;
+        countdownPlus.text = "+" + plus;
+        StartCoroutine(CountdownDisplay(1));
     }
 
     public void SubFromCountdown (int minus)
     {
         countdownTime -= minus;
+        countdownMinus.text = "-" + minus;
+        StartCoroutine(CountdownDisplay(0));
+    }
+
+    IEnumerator CountdownDisplay (int i)
+    {
+        if (i == 0)
+        {
+            Damage.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            Damage.SetActive(false);
+        }
+        if (i == 1)
+        {
+            Healing.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            Healing.SetActive(false);
+        }
+
     }
 
     public void NextLevel ()
