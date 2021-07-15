@@ -7,19 +7,23 @@ using TMPro;
 
 public class PauseMenue : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
+    private static bool GameIsPaused = false;
 
-    public GameObject PauseMenueUI;
+
     public GameObject PauseOverlay;
+    public GameObject TimeUpScreen;
+    public GameObject PauseMenueScreen;
 
     public int countdownTime;
     public TextMeshProUGUI countdownDisplay;
 
-    public GameObject TimeUpScreen;
+ 
+    private AudioSource Audio; 
 
     // called before the first frame
     public void Start(){
         StartCoroutine(CountdownToStart());
+        Audio = GameObject.FindGameObjectWithTag("BackgroundAudio").GetComponent<AudioSource>();
     }
 
     // called once per frame
@@ -43,25 +47,23 @@ public class PauseMenue : MonoBehaviour
 
     public void Resume ()
     {
-        PauseMenueUI.SetActive(false);
+        PauseMenueScreen.SetActive(false);
         PauseOverlay.SetActive(true);
         Time.timeScale = 1f;
         GameIsPaused = false;
 
-        AudioSource audio = GameObject.FindGameObjectWithTag("BackgroundAudio").GetComponent<AudioSource>();
-        audio.Play();
+        Audio.Play();
 
     }
 
     public void Pause ()
     {
-        PauseMenueUI.SetActive(true);
+        PauseMenueScreen.SetActive(true);
         PauseOverlay.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
 
-        AudioSource audio = GameObject.FindGameObjectWithTag("BackgroundAudio").GetComponent<AudioSource>();
-        audio.Pause();
+        Audio.Pause();
     }
 
 
@@ -79,9 +81,9 @@ public class PauseMenue : MonoBehaviour
         countdownDisplay.text = "Time is UP!!!";
         TimeUpScreen.SetActive(true);
         PauseOverlay.SetActive(false);
-        AudioSource audio = GameObject.FindGameObjectWithTag("BackgroundAudio").GetComponent<AudioSource>();
-        audio.Pause();
         Time.timeScale = 0f;
+
+        Audio.Pause();
     }
 
     public void AddToCountdown (int plus)

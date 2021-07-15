@@ -461,11 +461,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b4705a4d2d64e9b9c102289fe1e46f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseMenueUI: {fileID: 0}
   PauseOverlay: {fileID: 0}
+  TimeUpScreen: {fileID: 0}
+  PauseMenueScreen: {fileID: 0}
   countdownTime: 0
   countdownDisplay: {fileID: 0}
-  TimeUpScreen: {fileID: 0}
 --- !u!1 &2504470100755357783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2549,11 +2549,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b4705a4d2d64e9b9c102289fe1e46f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseMenueUI: {fileID: 2504470101482422229}
   PauseOverlay: {fileID: 2504470101925239786}
+  TimeUpScreen: {fileID: 2504470101444238239}
+  PauseMenueScreen: {fileID: 2504470101482422229}
   countdownTime: 3
   countdownDisplay: {fileID: 2504470100805688378}
-  TimeUpScreen: {fileID: 2504470101444238239}
 --- !u!1 &2504470101819416867
 GameObject:
   m_ObjectHideFlags: 0
@@ -2834,11 +2834,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b4705a4d2d64e9b9c102289fe1e46f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseMenueUI: {fileID: 0}
   PauseOverlay: {fileID: 0}
+  TimeUpScreen: {fileID: 0}
+  PauseMenueScreen: {fileID: 0}
   countdownTime: 0
   countdownDisplay: {fileID: 0}
-  TimeUpScreen: {fileID: 0}
 --- !u!1 &2504470101925239786
 GameObject:
   m_ObjectHideFlags: 0
@@ -3026,11 +3026,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b4705a4d2d64e9b9c102289fe1e46f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PauseMenueUI: {fileID: 0}
   PauseOverlay: {fileID: 0}
+  TimeUpScreen: {fileID: 0}
+  PauseMenueScreen: {fileID: 0}
   countdownTime: 0
   countdownDisplay: {fileID: 0}
-  TimeUpScreen: {fileID: 0}
 --- !u!1 &2504470101991878287
 GameObject:
   m_ObjectHideFlags: 0
