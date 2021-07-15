@@ -13,6 +13,7 @@ public class PauseMenue : MonoBehaviour
     public GameObject PauseOverlay;
     public GameObject TimeUpScreen;
     public GameObject PauseMenueScreen;
+    public GameObject FinishScreen;
 
     public int countdownTime;
     public TextMeshProUGUI countdownDisplay;
@@ -40,8 +41,6 @@ public class PauseMenue : MonoBehaviour
                 Pause();
             }
         }
-
-
     }
 
 
@@ -59,6 +58,17 @@ public class PauseMenue : MonoBehaviour
     public void Pause ()
     {
         PauseMenueScreen.SetActive(true);
+        PauseOverlay.SetActive(false);
+        Time.timeScale = 0f;
+        GameIsPaused = true;
+
+        Audio.Pause();
+    }
+
+    public void Finish ()
+    {
+        new WaitForSeconds(2f);
+        FinishScreen.SetActive(true);
         PauseOverlay.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
@@ -94,6 +104,19 @@ public class PauseMenue : MonoBehaviour
     public void SubFromCountdown (int minus)
     {
         countdownTime -= minus;
+    }
+
+    public void NextLevel ()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.buildIndex < 3)
+        {
+            SceneManager.LoadScene(scene.buildIndex);
+        }
+        else
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
     public void PlayAgain ()
