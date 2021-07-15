@@ -169,6 +169,7 @@ public class CharacterController2D : MonoBehaviour
 		if (other.gameObject.CompareTag("FinishLevel"))
 		{
 			//Call function to display "YOU WIN!" screen here / jump to next level
+			pauseMenue.Finish();
 			Debug.Log("YOU WON!");
 			AudioSource audio = other.gameObject.GetComponent<AudioSource>();
 			audio.Play();
