@@ -21,6 +21,7 @@ public class PauseMenue : MonoBehaviour
     public TextMeshProUGUI countdownDisplay;
     public TextMeshProUGUI countdownMinus;
     public TextMeshProUGUI countdownPlus;
+    public TextMeshProUGUI Score;
 
 
     private AudioSource Audio;
@@ -76,6 +77,8 @@ public class PauseMenue : MonoBehaviour
         PauseOverlay.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
+
+        Score.text = "SCORE: " + countdownTime + "SECONDS LEFT";
 
         Audio.Pause();
     }
