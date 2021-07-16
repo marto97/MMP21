@@ -1,15 +1,15 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using TMPro;
 
 public class PauseMenue : MonoBehaviour
 {
+    // always true when game is paused -> timescale = 0
     private static bool GameIsPaused = false;
 
 
+    // Gameobjects thet need to be referenced for SetActive()
     public GameObject PauseOverlay;
     public GameObject Damage;
     public GameObject Healing;
@@ -17,6 +17,7 @@ public class PauseMenue : MonoBehaviour
     public GameObject PauseMenueScreen;
     public GameObject FinishScreen;
 
+    // Countdown: Time and several displays
     public int countdownTime;
     public TextMeshProUGUI countdownDisplay;
     public TextMeshProUGUI countdownMinus;
@@ -24,6 +25,7 @@ public class PauseMenue : MonoBehaviour
     public TextMeshProUGUI Score;
 
 
+    // Audio
     private AudioSource Audio;
 
     // called before the first frame
@@ -49,6 +51,7 @@ public class PauseMenue : MonoBehaviour
     }
 
 
+    // Resuming the game
     public void Resume ()
     {
         PauseMenueScreen.SetActive(false);
@@ -60,6 +63,7 @@ public class PauseMenue : MonoBehaviour
 
     }
 
+    // Pausing the game
     public void Pause ()
     {
         PauseMenueScreen.SetActive(true);
@@ -70,20 +74,21 @@ public class PauseMenue : MonoBehaviour
         Audio.Pause();
     }
 
+    // Is called when CharacterController2D detects collision with the doenerstand
     public void Finish ()
     {
-        new WaitForSeconds(2f);
         FinishScreen.SetActive(true);
         PauseOverlay.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
 
-        Score.text = "SCORE: " + countdownTime + "SECONDS LEFT";
+        Score.text = "SCORE: " + countdownTime + " SECONDS LEFT";
 
         Audio.Pause();
     }
 
 
+    // Handles the time countdown and gameover
     IEnumerator CountdownToStart()
     {
         while (countdownTime > 0)
@@ -118,7 +123,8 @@ public class PauseMenue : MonoBehaviour
         countdownMinus.text = "-" + minus;
         StartCoroutine(CountdownDisplay(0));
     }
-
+    
+    // Handles the damage/healing overlays
     IEnumerator CountdownDisplay (int i)
     {
         if (i == 0)
@@ -136,6 +142,7 @@ public class PauseMenue : MonoBehaviour
 
     }
 
+    // Logic for several buttons
     public void NextLevel ()
     {
         Scene scene = SceneManager.GetActiveScene();
