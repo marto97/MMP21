@@ -202,7 +202,7 @@ public class CharacterController2D : MonoBehaviour
 
 	IEnumerator coolDown()
 	{
-		yield return new WaitForSeconds(5);
+		yield return new WaitForSeconds(1);
 		noDamageFromProfessor = false;
 	}
 }
