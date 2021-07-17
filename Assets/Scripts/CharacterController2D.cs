@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections;
 
 public class CharacterController2D : MonoBehaviour
 {
@@ -34,8 +35,9 @@ public class CharacterController2D : MonoBehaviour
 
 	public PauseMenue pauseMenue;
 	public int bonusForItems;
-	public int damageFromSpike;
-	public int damageFromProfessor;
+	private int damageFromSpike = 99;
+	private int damageFromProfessor = 10;
+	public bool noDamageFromProfessor;
 
 	private void Awake()
 	{
@@ -46,6 +48,8 @@ public class CharacterController2D : MonoBehaviour
 
 		if (OnCrouchEvent == null)
 			OnCrouchEvent = new BoolEvent();
+
+		noDamageFromProfessor = false;
 	}
 
 	private void FixedUpdate()
@@ -185,9 +189,20 @@ public class CharacterController2D : MonoBehaviour
 
 		if (other.gameObject.CompareTag("Professor"))
 		{
-			pauseMenue.SubFromCountdown(damageFromProfessor);
-			AudioSource audio = other.gameObject.GetComponent<AudioSource>();
-			audio.Play();
+			if (!noDamageFromProfessor)
+            {
+				pauseMenue.SubFromCountdown(damageFromProfessor);
+				AudioSource audio = other.gameObject.GetComponent<AudioSource>();
+				audio.Play();
+				noDamageFromProfessor = true;
+				StartCoroutine(coolDown());
+			}
 		}
+	}
+
+	IEnumerator coolDown()
+	{
+		yield return new WaitForSeconds(5);
+		noDamageFromProfessor = false;
 	}
 }
