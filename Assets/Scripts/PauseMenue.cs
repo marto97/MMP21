@@ -82,7 +82,15 @@ public class PauseMenue : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
 
-        Score.text = "SCORE: " + countdownTime + " SECONDS LEFT";
+        if (countdownTime <= 0)
+        {
+            Score.text = "SCORE: 0 SECONDS LEFT";
+        }
+        else
+        {
+            Score.text = "SCORE: " + countdownTime + " SECONDS LEFT";
+        }
+        
 
         Audio.Pause();
     }
