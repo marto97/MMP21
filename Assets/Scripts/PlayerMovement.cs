@@ -1,18 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller;
 
-    public float runSpeed = 20f;
+    public float moveSpeed;
+    public float walkSpeed;
+    public float runSpeed;
 
     float horizontalMove = 0f;
 
     bool jump = false;
 
     public Animator animator;
+
+    void Start()
+    {
+        // Create a temporary reference to the current scene.
+        Scene currentScene = SceneManager.GetActiveScene ();
+
+        // Retrieve the name of this scene.
+        string sceneName = currentScene.name;
+
+        if (sceneName == "level_4")
+        {
+            walkSpeed = 50f;
+            runSpeed = 150f;
+        }
+        else
+        {
+            walkSpeed = 20f;
+            runSpeed = 50f;
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,13 +49,13 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetKey(KeyCode.LeftShift))
         {
-            runSpeed = 50f;
+            moveSpeed = runSpeed;
         }
         else
         {
-            runSpeed = 20f;
+            moveSpeed = walkSpeed;
         }
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        horizontalMove = Input.GetAxisRaw("Horizontal") * moveSpeed;
 
     }
 
