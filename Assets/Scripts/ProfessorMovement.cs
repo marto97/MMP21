@@ -8,7 +8,7 @@ public class ProfessorMovement : MonoBehaviour
     public float speed;
     private Transform target;
     private bool facingRight = true;
-    private bool isAlive = true;
+    public bool isAlive = true;
     public Animator animator;
 
     // Start is called before the first frame update

@@ -38,6 +38,7 @@ public class CharacterController2D : MonoBehaviour
 	private int damageFromSpike = 99;
 	private int damageFromProfessor = 10;
 	public bool noDamageFromProfessor;
+	private bool professorIsAlive;
 
 	private void Awake()
 	{
@@ -189,7 +190,11 @@ public class CharacterController2D : MonoBehaviour
 
 		if (other.gameObject.CompareTag("Professor"))
 		{
-			if (!noDamageFromProfessor)
+			if (other != null)
+			{
+				professorIsAlive = other.GetComponent<ProfessorMovement>().isAlive;
+			}
+			if (!noDamageFromProfessor && professorIsAlive == true)
             {
 				pauseMenue.SubFromCountdown(damageFromProfessor);
 				AudioSource audio = other.gameObject.GetComponent<AudioSource>();
